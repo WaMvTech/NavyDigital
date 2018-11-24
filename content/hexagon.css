@@ -1,0 +1,71 @@
+
+.hex-content
+{
+   background-color: green;
+   position: absolute;
+}
+
+.hexagon {
+    align-items: center;
+    cursor: pointer;
+    fill: white;
+    height: calc(100px / 1.73 /* sqrt(3) */ );
+    margin: var(--hex-border) 0;
+    position: relative;
+    transition: var(--hex-transition);
+    width: 100px;
+ 
+}
+
+    .hexagon::after,
+    .hexagon::before {
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+        content: "";
+        left: 100px;
+        position: absolute;
+        transition: var(--hex-transition);
+        width: 0;
+    }
+
+    .hexagon::after {
+        border-top: 30px solid var(--color-hex-default);
+        top: 50%;
+        width: 0;
+    }
+
+    .hexagon::before {
+        border-bottom: 30px solid var(--color-hex-default);
+        bottom: 50%;
+    }
+
+
+
+
+/* Changes color of rectangle inside polygon*/
+.hexagon:hover {
+    background-color: var(--color-hex-hover);
+}
+
+    .hexagon:hover::after,
+    .hexagon:hover::before {
+        border-top-color: var(--color-hex-hover);
+        border-bottom-color: var(--color-hex-hover);
+    }
+
+
+
+
+
+
+
+/* Colors */
+
+
+
+/* Changes color to the the polygon */
+
+.color-css {
+    background-color: rgba(236, 98, 6, 0.6);
+}
+

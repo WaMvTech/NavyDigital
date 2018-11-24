@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../content/site.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Navy Digital</title>
+        <style>
+                a
+                {
+                        text-decoration: none;
+                }
+                * {
+                    box-sizing: border-box;
+                }
+                
+                body {
+                    background-color: #474e5d;
+                    font-family: Helvetica, sans-serif;
+                }
+                
+                /* The actual timeline (the vertical ruler) */
+                .timeline {
+                    position: relative;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                
+                /* The actual timeline (the vertical ruler) */
+                .timeline::after {
+                    content: '';
+                    position: absolute;
+                    width: 3px;
+                    background-color: white;
+                    top: 0;
+                    bottom: 0;
+                    left: 50%;
+                    margin-left: -3px;
+                }
+                
+                /* timeline_container around content */
+                .timeline_container {
+                    padding: 10px 40px;
+                    position: relative;
+                    background-color: inherit;
+                    width: 50%;
+                }
+                
+                /* The circles on the timeline */
+                .timeline_container::after {
+                    content: '';
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    right: -14px;
+                    background-color: rgba(23, 23, 23, 0.5);
+                    border: 2px solid rgb(91, 255, 85);
+                    top: 15px;
+                    border-radius: 50%;
+                    z-index: 1;
+                }
+                
+                /* Place the timeline_container to the left */
+                .left {
+                    left: 0;
+                }
+                
+                /* Place the timeline_container to the right */
+                .right {
+                    left: 50%;
+                }
+                
+                /* Add arrows to the left timeline_container (pointing right) */
+                .left::before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 22px;
+                    width: 0;
+                    z-index: 1;
+                    right: 30px;
+                    border: medium solid white;
+                    border-width: 10px 0 10px 10px;
+                    border-color: transparent transparent transparent white;
+                }
+                
+                /* Add arrows to the right timeline_container (pointing left) */
+                .right::before {
+                    content: " ";
+                    height: 0;
+                    position: absolute;
+                    top: 22px;
+                    width: 0;
+                    z-index: 1;
+                    left: 30px;
+                    border: medium solid white;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent white transparent transparent;
+                }
+                
+                /* Fix the circle for timeline_containers on the right side */
+                .right::after {
+                    left: -16px;
+                }
+                
+                /* The actual content */
+                .content
+                {
+                line-height: 1.4em;
+                color:white;
+                padding: 10px;
+                background-color: rgba(23, 23, 23, 0.8);
+                position: relative;
+                border-radius: 6px;
+                }
+                
+                /* Media queries - Responsive timeline on screens less than 600px wide */
+                @media screen and (max-width: 600px) {
+                  /* Place the timelime to the left */
+                  .timeline::after {
+                    left: 31px;
+                  }
+                  
+                  /* Full-width timeline_containers */
+                  .timeline_container {
+                    width: 100%;
+                    padding-left: 70px;
+                    padding-right: 25px;
+                  }
+                  
+                  /* Make sure that all arrows are pointing leftwards */
+                  .timeline_container::before {
+                    left: 60px;
+                    border: medium solid white;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent white transparent transparent;
+                  }
+                
+                  /* Make sure all circles are at the same spot */
+                  .left::after, .right::after {
+                    left: 15px;
+                  }
+                  
+                  /* Make all right timeline_containers behave like the left ones */
+                  .right {
+                    left: 0%;
+                  }
+                }
+        </style>
+</head>
+<body>
+        <nav>
+            <a href="#" class="brand-logo">Veteran Digital</a>   
+        </nav>
+ 
+        <div class="timeline">
+
+           
+                <div class="timeline_container left">
+                <a href='./html/html_one.html'>
+                  <div class="content">
+                    <h2>HTML Basics</h2>
+                    <h4>Course Info</h4>
+                    <p>
+                       Learn HTML (HyperText Markup Language), the language common to every website. HTML describes the basic structure
+                       and content of a web page. If you want to build a website or web application, you'll need to know HTML.
+                    </p>
+                    <h4>What you will complete</h4>
+                    <ul>
+                      <li>Prerequisites</li>
+                      <li>Selecting a Text Editor</li>
+                      <li>Hello World</li>
+                    </ul>
+                  </div>
+                </a>
+                </div>
+          
+                <div class="timeline_container right">
+                <a href='./html/html_two.html'>
+                  <div class="content">
+                    <h2>Tags, Attributes, and Elements</h2>
+                    <h4>Course Info</h4>
+                    <p>
+                      Learn about this very basics of HTML including head, body, title tags, and what elements and attributes are.
+                    </p>
+                    <h4>What you will complete</h4>
+                    <ul>
+                      <li>Define HTML and CSS</li>
+                      <li>Add and change HTML tags</li>
+                      <li>Modify CSS attributes</li>
+                      <li>Learn the structural foundation of web pages and applications</li>
+                    </ul>
+                  </div>
+                  </a>
+                </div>
+                         
+                <div class="timeline_container left">
+                <a href='./html/html_three.html'>
+                  <div class="content">
+                      <h2>Working with Content on the Web</h2>
+                      <h4>Course Info</h4>
+                      <p>
+                         In this one will me talking about content on the web. And what it means to put content on the web, and other stuff. Lots of content, so much content your gonna get sick of the word content. 
+                      </p>
+                      <h4>What you will complete</h4>
+                      <ul>
+                        <li>Comments</li>
+                        <li>Emphasis</li>
+                        <li>Multiline Content</li>
+                        <li>Paragraph Tags</li>
+                        <li>Line Break Tags</li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+                <div class="timeline_container right">
+                  <a href='./html/html_four.html'>
+                  <div class="content">
+                      <h2>Headings for your Pages</h2>
+                      <h4>Course Info</h4>
+                      <p>
+                          Adding heading tags to your pages is a great way to help describe what your page is about and add hierarchy
+                      </p>
+                      <h4>What you will complete</h4>
+                      <ul>
+                        <li>h1</li>
+                        <li>h2</li>
+                        <li>h3</li>
+                        <li>h4</li>
+                        <li>h5</li>
+                        <li>h6</li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+
+
+                <div class="timeline_container left">
+                  <a href='./html/html_five.html'>
+                  <div class="content">
+                      <h2>Unordered, Ordered, and Description Lists</h2>
+                      <h4></h4>
+                      <p>
+                          Learn how to create all kinds of lists in HTML including unordered lists, ordered lists and definition lists!
+                      </p>
+                      <h4>What you will complete</h4>
+                      <ul>
+                        <li>Unordered Lists</li>
+                        <li>Ordered Lists</li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+
+                <div class="timeline_container right">
+                  <a href='./html/html_six.html'>
+                  <div class="content">
+                      <h2>Absolute Links, Relative Links, and ID Links</h2>
+                      <h4></h4>
+                      <p>Learn how pages on the web are conected to one another with absolute links, relative,link, and ID links.</p>
+                      <h4>What you will complete</h4>
+                      <ul>
+                        <li>Absolute link path</li>
+                        <li>Relative link path</li>
+                        <li>Id link path</li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+              
+                <div class="timeline_container left">
+                  <a href='./html/html_seven.html'>
+                  <div class="content">
+                      <h2>Images and SVG Graphics</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+
+                <div class="timeline_container right">
+                  <a href='./html/html_eight.html'>
+                  <div class="content">
+                      <h2>Display Data with Tables</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+
+                <div class="timeline_container left">
+                  <a href='./html/html_nine.html'>
+                  <div class="content">
+                      <h2>Collect Data using Forms and Inputs</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+                <div class="timeline_container right">
+                  <a href='./html/html_ten.html'>
+                  <div class="content">
+                      <h2>Generic Containers: Div and Span</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+                <div class="timeline_container left">
+                  <a href='./html/html_eleven.html'>
+                  <div class="content">
+                      <h2>Multimedia: Audio, Video, and Canvas</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+                <div class="timeline_container right">
+                  <a href='./html/html_twelve.html'>
+                  <div class="content">
+                      <h2>Time, Mark, Abbreviation, Quote, Pre, Code</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+
+                <div class="timeline_container left">
+                  <a href='./html/html_thirteen.html'>
+                  <div class="content">
+                      <h2>Conclusion</h2>
+                      <h4></h4>
+                      <p></p>
+                      <h4></h4>
+                      <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                  </div>
+                  </a>  
+                </div>
+            
+          
+        </div>
+</body>
+</html>

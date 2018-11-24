@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../../content/site.css">
+        <link rel="stylesheet" href="../../content/module.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <title>Veteran Digital</title>
+<style>
+        
+</style>
+</head>
+<body>
+
+
+<nav>
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Veteran Digital</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
+    </div>
+</nav>
+        
+       
+<div id='outer_container' class="container">
+<div id='inner_container' class="main_display">
+
+
+        <div class="row">
+            <div class="col m12 offset-m3">
+
+                <div class="module">
+                    <div class="inner_module">
+
+                        <h3 class="title">Inline Styles</h3>
+
+                        <div class="main_para_node">
+                            <p class="main_para">When you want to apply styles to your HTML markup, there are three different ways to go about it, each with their pros and cons. Inline Styles Inline styles are just that, styles that are literally within the lines of HTML. To style an HTML tag, you use the style attribute, with the value being your CSS.
+                            In our setup example, let's say we wanted our header (h1) to be blue. Here's how you would do that inline:</p>
+                        </div>
+
+                        <div class="tut_display">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="../images/html5.jpg">
+                                    <span class="card-title"></span>               
+                                </div>
+                                <div class="card-content">
+                                    <p class="inner_card_paragraph"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="row">
+                <div class="col m12 offset-m3">
+    
+                    <div class="module">
+                        <div class="inner_module">
+    
+                            <h3 class="title">Internal Styles</h3>
+    
+                            <div class="main_para_node">
+                                <p class="main_para">Internal styles are styles placed in the head tag and are applied to the entire page. Unlike inline styles which only affect the element they are placed on, internal styles have the potential to affect multiple elements.
+
+                                        Creating your own internal styles is as easy as placing a style tag inside your head tag, and then placing your styles inside that. Let's say you wanted to make the text inside h2 tags green, you can do this:</p>
+                            </div>
+    
+                            <div class="tut_display">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="../images/html5.jpg">
+                                        <span class="card-title"></span>               
+                                    </div>
+                                    <div class="card-content">
+                                        <p class="inner_card_paragraph">Internal styles are considered better than inline styles for the main reason that you can target multiple elements, instead of just one. Not to mention that they are separate; internal styles are in the head tag and inline styles are mixed in directly with HTML.
+
+                                                Still, we want true separation, and the only way to achieve that is to have our styles in their own CSS file.</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                    <div class="col m12 offset-m3">
+        
+                        <div class="module">
+                            <div class="inner_module">
+        
+                                <h3 class="title">External Styles</h3>
+        
+                                <div class="main_para_node">
+                                    <p class="main_para">External styles are exactly the same as internal styles except that they live in a separate file, as opposed to inside the same HTML file.
+                                    In the same folder as your index.html file, make a new file and save it as styles.css. If you wanted to make paragraphs red, put this inside styles.css and save.</p>
+                                </div>
+        
+                                <div class="tut_display">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <img src="../images/html5.jpg">
+                                            <span class="card-title"></span>               
+                                        </div>
+                                        <div class="card-content">
+                                            <p class="inner_card_paragraph">Now we need to tell our HTML file to use this styles file. We do that by adding this line to our head tag. This tells our browser not only that this is a CSS file, but also where to look for it via the  href attribute. Your HTML file should now look like this: With external styles, we keep our HTML and CSS separate. We can even work on them independently. If you added another paragraph, that one would also be red. In addition, if you added more styles to styles.css, you would see those changes if you refreshed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+    
+                <div class="row">
+                        <div class="col m12 offset-m3">
+            
+                            <div class="module">
+                                <div class="inner_module">
+            
+                                    <h3 class="title">Cascading</h3>
+            
+                                    <div class="main_para_node">
+                                        <p class="main_para">The "C" in CSS stands for cascading. Styles are said to cascade because they follow a specific hierarchy. We learned above three different ways to apply styles, but what if you tried to style the same element in each of three different ways?
+                                        The hierarchy that the browser will follow is external, internal, then inline. Technically speaking, all of the styles will apply, but only the inline styles will win in the end. There is one exception, however, and that is when you use the important rule.
+                                        </p>
+                                    </div>
+            
+                                    <div class="tut_display">
+                                        <div class="card">
+                                            <div class="card-image">
+                                                <img src="../images/html5.jpg">
+                                                <span class="card-title"></span>               
+                                            </div>
+                                            <div class="card-content">
+                                                <p class="inner_card_paragraph">Now we need to tell our HTML file to use this styles file. We do that by adding this line to our head tag. This tells our browser not only that this is a CSS file, but also where to look for it via the  href attribute. Your HTML file should now look like this: With external styles, we keep our HTML and CSS separate. We can even work on them independently. If you added another paragraph, that one would also be red. In addition, if you added more styles to styles.css, you would see those changes if you refreshed.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                            <div class="col m12 offset-m3">
+                
+                                <div class="module">
+                                    <div class="inner_module">
+                
+                                        <h3 class="title">Important Rule</h3>
+                
+                                        <div class="main_para_node">
+                                            <p class="main_para">The important rule is an exception that you can apply to your styles that tells the browser "make this CSS rule apply, no matter what". It is generally frown upon to be used unless absolutely necessary because it violates the cascading nature of CSS. To use the important rule, simply add !important at the end of your style:
+                                            </p>
+                                        </div>
+                
+                                        <div class="tut_display">
+                                            <div class="card">
+                                                <div class="card-image">
+                                                    <img src="../images/html5.jpg">
+                                                    <span class="card-title"></span>               
+                                                </div>
+                                                <div class="card-content">
+                                                    <p class="inner_card_paragraph">Even though we specified that we wanted all h1 tags inside special classes be the color  red, the text ended up being blue despite the selector being less specific because of the !important usage.
+                                                    Now that you know the three main ways to style, it's time to learn the syntax for CSS, which we will cover in the next lesson.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+        
+
+</div>
+</div><!--End of Container-->
+<script></script>
+</body>
+</html>

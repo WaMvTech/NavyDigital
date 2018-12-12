@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="content/portal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
     <title>Veteran Digital</title>
 </head>
 <body>
@@ -88,6 +90,27 @@
 
 </div>
 
+<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+
+<script>
+  // Initialize Firebase
+  const config = {
+    apiKey: "AIzaSyD4wPSEVhOvu8CZ4PtJ5ah934VAuVd5Nno",
+    authDomain: "jarvis-f7c61.firebaseapp.com",
+    databaseURL: "https://jarvis-f7c61.firebaseio.com",
+    projectId: "jarvis-f7c61",
+    storageBucket: "jarvis-f7c61.appspot.com",
+    messagingSenderId: "1034838045387"
+  };
+  firebase.initializeApp(config);
+
+  const firestore = firebase.firestore();
+  const settings = {/* your settings... */ timestampsInSnapshots: true};
+  firestore.settings(settings);
+
+</script>
+
 <script src='server.js'></script>
+
 </body>
 </html>

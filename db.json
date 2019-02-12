@@ -1,0 +1,210 @@
+[
+
+
+    {
+        "id":"01",
+        "h2":"HTML Basics",
+        "h4":"Course Info",
+        "p":"Learn HTML (HyperText Markup Language), the language common to every website. HTML describes the basic structure and content of a web page. If you want to build a website or web application, you'll need to know HTML.",
+        "h3":"What you will complete",
+        "ul":[ 
+            "Prerequisites",
+            "Selecting a Text Editor",
+            "Hello World"
+        ]
+
+    },
+
+
+
+
+    {
+        "id":"02",
+        "h2":"Tags, Attributes, and Elements",
+        "h4":"Course Info",
+        "p":" Learn about this very basics of HTML including head, body, title tags, and what elements and attributes are.",
+        "h3":"What you will complete",
+        "ul":[ 
+            "Define HTML and CSS",
+            "Add and change HTML tags",
+            "Modify CSS attributes",
+            "Learn the structural foundation of web pages and applications"
+        ]
+    },
+
+
+
+
+
+
+    {
+        "id":"03",
+        "h2":"Working with Content on the Web",
+        "h4":"Course Info",
+        "p":" In this one will me talking about content on the web. And what it means to put content on the web, and other stuff. Lots of content, so much content your gonna get sick of the word content. ",
+        "h3":"What you will complete",
+        "ul":[ 
+            "Comments",
+            "Emphasis",
+            "Multiline Content",
+            "Paragraph Tags",
+            "Line Break Tag"
+        ]
+    },
+
+
+    
+    {
+        "id":"04",
+        "h2":"",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+
+    {
+        "id":"05",
+        "h2":"Headings for your Pages",
+        "h4":"Course Info",
+        "p":" Adding heading tags to your pages is a great way to help describe what your page is about and add hierarchy",
+        "h3":"What you will complete",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+
+
+
+    {
+        "id":"05",
+        "h2":"Absolute Links, Relative Links, and ID Links",
+        "h4":"",
+        "p":"Learn how pages on the web are conected to one another with absolute links, relative,link, and ID links.",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+
+
+
+    {
+        "id":"06",
+        "h2":"Images and SVG Graphics",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    {
+        "id":"07",
+        "h2":"Display Data with Tables",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+    {
+        "id":"08",
+        "h2":"Collect Data using Forms and Inputs",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    {
+        "id":"09",
+        "h2":"Generic Containers: Div and Span",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    {
+        "id":"10",
+        "h2":"Multimedia: Audio, Video, and Canvas",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+    {
+        "id":"10",
+        "h2":"Time, Mark, Abbreviation, Quote, Pre, Code",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+
+    {
+        "id":"11",
+        "h2":"Conclusion",
+        "h4":"",
+        "p":"",
+        "h3":"",
+        "ul":[ 
+            "",
+            "",
+            "",
+            ""
+        ]
+    }
+
+]
